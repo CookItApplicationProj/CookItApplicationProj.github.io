@@ -6,6 +6,10 @@ header {
     border-bottom: 3px solid firebrick;
 }
 
+.download {
+  float: right;
+}
+
 .header-container {
     width:95%;
     margin: auto;
