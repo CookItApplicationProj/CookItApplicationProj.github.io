@@ -13,6 +13,8 @@
 
     <link rel="icon" href = "./assets/images/icon.png">
 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
 </head>
 <body>
         <header>
@@ -35,16 +37,40 @@
             </header>
 
             <div class="order-container">
-                <div class="login">
+                <div class="container login">
+                    <h2>Login to Begin Order</h2>
+                    <form action="" onsubmit="blockLogin(event)">
+                      <div class="form-group">
+                        <label for="username">Username:</label>
+                        <input type="text" class="form-control" id="username" placeholder="Enter username" name="username">
+                      </div>
+                      <div class="form-group">
+                        <label for="pwd">Password:</label>
+                        <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pwd">
+                      </div>
+                      <div class="checkbox">
+                        <label><input type="checkbox" name="remember"> Remember me</label>
+                      </div>
+                      <button type="submit" class="btn btn-default" >Submit</button>
+                    </form>
                     
-                </div>
+                  </div>
+                  
+                  
+            </div>
+
+            <div class="footer">
+                <p id="disclaimer">This website was created for a student project at CSULB and is not meant for commerical use.</p>
+                <p>Created by - Felix Huang, Hoan Nguyen, John Nguyen, Victor Le, Josue Cruz, Joji Maldonado.</p> 
+                <p>CSULB IS 385 - Fall 2018</p>
             </div>
 
             <script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/7.29.2/sweetalert2.all.min.js"></script>
             <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+            <script src="./assets/scripts/alert.js"></script>
+            <script src = "./assets/scripts/order.js"></script>
             <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
             <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-            <script src="./assets/scripts/alert.js"></script>
     
 </body>
 </html>
