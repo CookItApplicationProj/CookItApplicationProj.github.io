@@ -13,6 +13,9 @@ header::after {
     padding-top: 5%;
 }
 
+.subscription-choice {
+    margin: 3% 0%;
+}
 
 /* CSS for Credit Card Payment form */
 .credit-card-box .panel-title {
