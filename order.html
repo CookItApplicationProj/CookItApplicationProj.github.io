@@ -39,7 +39,7 @@
             <div class="order-container">
                 <div class="container login">
                     <h2>Login to Begin Order</h2>
-                    <form action="" onsubmit="blockLogin(event)">
+                    <form action="" onsubmit="blockLogin(event); directBrowseOrder();">
                       <div class="form-group">
                         <label for="username">Username:</label>
                         <input type="text" class="form-control" id="username" placeholder="Enter username" name="username">
@@ -51,13 +51,14 @@
                       <div class="checkbox">
                         <label><input type="checkbox" name="remember"> Remember me</label>
                       </div>
-                      <button type="submit" class="btn btn-default" >Submit</button>
+                      <button type="submit" class="btn btn-default">Submit</button>
                     </form>
                     
                   </div>
                   
                   
             </div>
+            
 
 
             <script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/7.29.2/sweetalert2.all.min.js"></script>
